@@ -5,22 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ORION - Space Club | Govt Engineering College, Wayanad</title>
-  
+
   <!-- CSS Links - Always in the head for immediate styling -->
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styles/navbar.css">
-   <link rel="stylesheet" href="styles/loading.css">
-   <link rel="stylesheet" href="styles/space-section.css">
-   <link rel="stylesheet" href="styles/about.css">
-   <link rel="stylesheet" href="styles/execom.css">
-   <link rel="stylesheet" href="styles/project.css">
-   <link rel="stylesheet" href="styles/join-us.css">
-   <link rel="stylesheet" href="styles/focus.css"> 
-   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/loading.css">
+  <link rel="stylesheet" href="styles/space-section.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/execom.css">
+  <link rel="stylesheet" href="styles/events.css">
+  <link rel="stylesheet" href="styles/gallary.css">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/join-us.css">
+  <link rel="stylesheet" href="styles/focus.css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
@@ -40,9 +43,7 @@
   <!-- Navbar -->
   <nav id="navbar">
     <div class="logo">
-      <img
-        src="assets/logo.png"
-        height="40" width="50" alt="ORION Logo">
+      <img src="assets/logo.png" height="40" width="50" alt="ORION Logo">
       <div class="logo-text">
         <span class="main-title">ORION</span>
         <span class="sub-title">Govt. Engineering College, Wayanad</span>
@@ -51,14 +52,26 @@
     <button class="menu-toggle" id="menuToggle">
       <i class="fas fa-bars"></i>
     </button>
-    <ul id="menu">
-      <li><a href="#space-section">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#execom">Execom</a></li>
-      <li><a href="#our-focus">Our Focus</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#join-us">Join Us</a></li>
-    </ul>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="assets/logo.png" height="40" width="50" alt="ORION Logo">
+        <div class="logo-text">
+          <span class="main-title">ORION</span>
+          <span class="sub-title">Govt. Engineering College, Wayanad</span>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="menu">
+        <li><a href="#space-section">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#execom">Execom</a></li>
+        <li><a href="#join-us">Join Us</a></li>
+      </ul>
+    </nav>
   </nav>
 
   <!-- Space Section -->
@@ -102,15 +115,6 @@
     </div>
   </section>
 
-  <!-- Execom Section -->
-  <section id="execom" class="section-hidden">
-    <h2>Meet Our Execom</h2>
-    <div class="execom-container" id="execom-container">
-      <!-- Execom members will be dynamically loaded here by JavaScript -->
-    </div>
-    <!-- Removed 'load-more-container' and 'loadMoreBtn' if using auto-scroll -->
-  </section>
-
   <!-- Our Focus Section -->
   <section id="our-focus" class="focus-section section-hidden">
     <div class="container">
@@ -123,7 +127,15 @@
         <!-- Focus cards will be dynamically loaded here by JavaScript -->
       </div>
     </div>
+  </section>
 
+  <!-- Execom Section -->
+  <section id="execom" class="section-hidden">
+    <h2>Meet Our Execom</h2>
+    <div class="execom-container" id="execom-container">
+      <!-- Execom members will be dynamically loaded here by JavaScript -->
+    </div>
+    <!-- Removed 'load-more-container' and 'loadMoreBtn' if using auto-scroll -->
   </section>
 
   <!-- Projects Section -->
@@ -137,16 +149,42 @@
       <!-- Projects will be dynamically loaded here by JavaScript -->
     </div>
     <div class="projects-cta">
-      <button class="projects-btn">View All Projects</button>
+      <a href="projects.html">
+        <button class="projects-btn">View All Projects</button></a>
     </div>
     <!-- REMINDER: The JavaScript links for this section belong at the very end of your <body> tag. -->
-</section>
+  </section>
 
+  <!-- Events section -->
+  <section id="events">
+    <h2>Events</h2>
+    <div class="events-container">
+      <!-- Cards will be injected by JS -->
+    </div>
+    <div class="events-button-wrapper">
+      <div class="events-cta">
+        <a href="gallary.html"><button class="events-btn">View Events</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallary section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <!-- Cards will be injected by JS -->
+    </div>
+    <div class="gallery-button-wrapper">
+      <div class="gallery-cta">
+        <a href="gallary.html"><button class="gallery-btn">View Gallery</button></a>
+      </div>
+    </div>
+  </section>
 
   <!-- Join Us Section -->
   <section id="join-us" class="section-hidden">
     <div class="join-header">
-      <h2>Join ORION</h2>
+      <h2 >Join ORION</h2>
       <p class="join-intro">Ready to embark on your space exploration journey? Join our community of passionate
         engineers and researchers.</p>
     </div>
@@ -209,6 +247,13 @@
   <!-- Our Focus Section Scripts -->
   <script src="script/focus/our-focus.js"></script> <!-- Ensure this filename is correct -->
   <script src="script/focus/app.js"></script>
+
+  <!-- Events scripts -->
+  <script src="script/events/events.js"></script>
+
+  <!-- Gallery scripts -->
+  <script src="script/gallary/gallary.js"></script>
+  <script src="script/gallary/app.js"></script>
 
   <!-- Projects Section Scripts -->
   <script src="script/project/projects.js"></script>
