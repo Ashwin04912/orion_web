@@ -5,22 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ORION - Space Club | Govt Engineering College, Wayanad</title>
-  
+
   <!-- CSS Links - Always in the head for immediate styling -->
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styles/navbar.css">
-   <link rel="stylesheet" href="styles/loading.css">
-   <link rel="stylesheet" href="styles/space-section.css">
-   <link rel="stylesheet" href="styles/about.css">
-   <link rel="stylesheet" href="styles/execom.css">
-   <link rel="stylesheet" href="styles/project.css">
-   <link rel="stylesheet" href="styles/join-us.css">
-   <link rel="stylesheet" href="styles/focus.css"> 
-   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/loading.css">
+  <link rel="stylesheet" href="styles/space-section.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/execom.css">
+  <link rel="stylesheet" href="styles/events.css">
+  <link rel="stylesheet" href="styles/gallary.css">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/join-us.css">
+  <link rel="stylesheet" href="styles/focus.css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
@@ -40,9 +43,7 @@
   <!-- Navbar -->
   <nav id="navbar">
     <div class="logo">
-      <img
-        src="assets/logo.png"
-        height="40" width="50" alt="ORION Logo">
+      <img src="assets/logo.png" height="40" width="50" alt="ORION Logo">
       <div class="logo-text">
         <span class="main-title">ORION</span>
         <span class="sub-title">Govt. Engineering College, Wayanad</span>
@@ -51,14 +52,28 @@
     <button class="menu-toggle" id="menuToggle">
       <i class="fas fa-bars"></i>
     </button>
-    <ul id="menu">
-      <li><a href="#space-section">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#execom">Execom</a></li>
-      <li><a href="#our-focus">Our Focus</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#join-us">Join Us</a></li>
-    </ul>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="assets/logo.png" height="40" width="50" alt="ORION Logo">
+        <div class="logo-text">
+          <span class="main-title">ORION</span>
+          <span class="sub-title">Govt. Engineering College, Wayanad</span>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="menu">
+        <li><a href="#space-section">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#our-focus">Our Focus</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#execom">Execom</a></li>
+        <li class="join-us"><a href="#join-us">Join Us</a></li>
+      </ul>
+    </nav>
   </nav>
 
   <!-- Space Section -->
@@ -96,19 +111,10 @@
       </div>
       <div class="about-image">
         <img
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy5wMy5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJzcGFjZUdyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMGEwZTE3Ii8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxYTFmM2EiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwZjE1MjUiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0icGxhbmV0R3JhZGllbnQiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzY2ZTJlMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzZlNDVlMiIvPjwvcmFkYWxHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9InVybCgjc3BhY2VHcmFkaWVudCkiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHJ9PSI4MCIgZmlsbD0idXJsKCNwbGFuZXRHcmFkaWVudCkiIG9wYWNpdHk9IjAuOCIvPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjEyMCIgcj0iMTUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOSIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjYwIiByPSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjcuIi8+PGNpcmNsZSBjeD0iMTAwIiBjeT0iNDAiIHI9IjQiIGZpbGw9IiM4OGQzY2UiIG9wYWNpdHk9IjAuOCIvPjxjaXJjbGUgY3g9IjYwIiBj eT0iMjAwIiByPSIzIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjYiLz48Y2lyY2xlIGN4PSIzMjAiIGN5PSIyMjAiIHI9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIvPjxlbGxpcHNlIGN4PSIyMDAiIGN5PSIxNTAiIHJ4PSIxMjAiIHJ5PSIxNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjODhkM2NlIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9IjAuNiIvPjxwYXRoIGQ9iTExMCAyNzAgQzE0MCAyNDAsMTkwIDI0MCwyMDAgMjcwIEMyMjAgMjQwLDI2MCAyNDAsMzAwIDI3MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuNCIvPjxwb2x5Z29uIHBvaW50cz0iMjAwLDIyMCAyMTAsMjYwIDE5MCwyNjAiIGZpbGw9IiM4OGQzY2UiIG9wYWNpdHk9IjAuOSIvPjwvc3ZnPg=="
-          alt="Space Exploration">
+          src="assets/gallery/weorion_fixed.jpg"
+          alt="We Orion!">
       </div>
     </div>
-  </section>
-
-  <!-- Execom Section -->
-  <section id="execom" class="section-hidden">
-    <h2>Meet Our Execom</h2>
-    <div class="execom-container" id="execom-container">
-      <!-- Execom members will be dynamically loaded here by JavaScript -->
-    </div>
-    <!-- Removed 'load-more-container' and 'loadMoreBtn' if using auto-scroll -->
   </section>
 
   <!-- Our Focus Section -->
@@ -123,7 +129,19 @@
         <!-- Focus cards will be dynamically loaded here by JavaScript -->
       </div>
     </div>
+  </section>
 
+  <!-- Execom Section -->
+  <section id="execom" class="section-hidden">
+    <h2>Meet Our Execom</h2>
+    <div class="execom-container" id="execom-container">
+      <!-- Execom members will be dynamically loaded here by JavaScript -->
+    </div>
+    <div class="execom">
+      <div class="execom-cta">
+        <a href="execom.html"><button class="execom-btn">View Execom</button></a>
+      </div>
+    </div>
   </section>
 
   <!-- Projects Section -->
@@ -137,11 +155,37 @@
       <!-- Projects will be dynamically loaded here by JavaScript -->
     </div>
     <div class="projects-cta">
-      <button class="projects-btn">View All Projects</button>
+      <a href="projects.html">
+        <button class="projects-btn">View All Projects</button></a>
     </div>
     <!-- REMINDER: The JavaScript links for this section belong at the very end of your <body> tag. -->
-</section>
+  </section>
 
+  <!-- Events section -->
+  <section id="events">
+    <h2>Events</h2>
+    <div class="events-container">
+      <!-- Cards will be injected by JS -->
+    </div>
+    <div class="events-button-wrapper">
+      <div class="events-cta">
+        <a href="events.html"><button class="events-btn">View All Events</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallary section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <!-- Cards will be injected by JS -->
+    </div>
+    <div class="gallery-button-wrapper">
+      <div class="gallery-cta">
+        <a href="gallary.html"><button class="gallery-btn">View Gallery</button></a>
+      </div>
+    </div>
+  </section>
 
   <!-- Join Us Section -->
   <section id="join-us" class="section-hidden">
@@ -151,7 +195,7 @@
         engineers and researchers.</p>
     </div>
     <div class="join-benefits">
-      <h3>What You'll Get</h3>
+      <h3>What You Can Take</h3>
       <div class="benefits-list">
         <div class="benefit-item">
           <i class="fas fa-graduation-cap"></i>
@@ -171,26 +215,26 @@
           <i class="fas fa-trophy"></i>
           <div class="benefit-content">
             <h4>Competitions</h4>
-            <p>Participate in national and international space competitions</p>
+            <p>Participate in college, national and international space competitions</p>
           </div>
         </div>
         <div class="benefit-item">
           <i class="fas fa-briefcase"></i>
           <div class="benefit-content">
             <h4>Career Opportunities</h4>
-            <p>Access to internships and job opportunities in space sector</p>
+            <p>Access to internships and job opportunities in different sectors</p>
           </div>
         </div>
         <div class="benefit-item">
           <i class="fas fa-project-diagram"></i>
           <div class="benefit-content">
-            <h4>Real Projects</h4>
-            <p>Work on actual space missions and research projects</p>
+            <h4>Projects</h4>
+            <p>Work on projects to upskill and gain hands-on experience</p>
           </div>
         </div>
       </div>
       <div class="join-button-wrapper">
-        <a href="https://forms.gle/your-google-form-url" class="join-form-link" target="_blank">
+        <a href="https://forms.gle/EcyoSTUbc4iVbbPc8" class="join-form-link" target="_blank">
           <i class="fas fa-paper-plane"></i>
           Apply Now
         </a>
@@ -209,6 +253,13 @@
   <!-- Our Focus Section Scripts -->
   <script src="script/focus/our-focus.js"></script> <!-- Ensure this filename is correct -->
   <script src="script/focus/app.js"></script>
+
+  <!-- Events scripts -->
+  <script src="script/events/events.js"></script>
+
+  <!-- Gallery scripts -->
+  <script src="script/gallary/gallary.js"></script>
+  <script src="script/gallary/app.js"></script>
 
   <!-- Projects Section Scripts -->
   <script src="script/project/projects.js"></script>
